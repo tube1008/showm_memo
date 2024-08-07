@@ -1,0 +1,69 @@
+/* db-count 내부에서 각 통계페이지의 table 스타일 기본 형태 css */
+
+/* 전체 main css */
+div.main {
+	width: 100%;
+	position: relative;
+}
+/* 전체 main 을 좌/우 분할시 왼쪽 설정 */
+div.left {
+	position: relative;
+	width: 50%;
+	float: left;
+}
+/* 전체 main 을 좌/우 분할시 오른쪽 설정 */
+div.right {
+	position: relative;
+	width: 50%;
+	float: right;
+}
+/* 각 개별 div 좌->우로 붙여짐*/
+div.container {
+	position: relative;
+	float: left;
+}
+/* table 기본 스타일 코드 */
+table {
+	border : 2px solid black;
+	border-collapse : collapse;
+	text-align: center;
+}
+th, thead {
+	border : 1px solid black;
+	font-weight: bold;
+	padding: 2px;
+}
+td, tbody {
+	border : 1px solid black;
+}
+/* 휴일 cells css  */
+.holiday {
+	color: red;
+}
+/* 합계 cells css  */
+.sum {
+	background-color: FFF2CC;
+	font-weight: bold;
+}
+/* 유료광고 css */
+.pay-ad {
+	background-color: C9DAF8;
+}
+/* 유료광고가 아닌 css */
+.not-pay-ad {
+	background-color: D9EAD3;
+}
+/* 제외 항목 정보 css */
+.info {
+	font-size: 16px;
+	font-weight: bold;
+	color: red;
+}
+
+
+.paging {margin-top:10px;text-align:center;}
+.paging span a {display:inline-block; width:30px;text-align:center; text-decoration:none; }
+.paging span a:hover {color:#ff8600; font-weight:bold;}
+.paging span strong {display:inline-block; width:20px; color:#ff8600; text-align:center;}
+.paging a {text-decoration:none;}
+.paging a:hover {color:#ff8600;}
